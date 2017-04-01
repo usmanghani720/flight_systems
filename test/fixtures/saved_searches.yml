@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date1: MyString
+  date2: MyString
+  start: MyString
+  end: MyString
+  price_max: MyString
+  price_min: MyString
+  duration: MyString
+  flight_type: MyString
+  flight_class: MyString
+
+two:
+  date1: MyString
+  date2: MyString
+  start: MyString
+  end: MyString
+  price_max: MyString
+  price_min: MyString
+  duration: MyString
+  flight_type: MyString
+  flight_class: MyString

@@ -1,0 +1,149 @@
+.radio-btn-inner{ width:100%; }
+.radio-btn-inner:after{ clear:both; display:block; content:""; }
+
+.radio-btn-inner label {
+  display: block;
+  font-size: 14px;
+  float: left;
+  width: 110px;
+  position: relative;
+  margin:10px 0px 0 0;
+  padding: 12px 15px 30px 15px;
+  text-align:center;
+  background: #efeff0;
+  background: #E8E8E8;
+  border: 2px solid #CCC;
+  border-radius: 3px;
+  cursor: pointer;
+  overflow:hidden;
+  text-transform:inherit !important;
+  font-family: arial,sans-serif;
+  height: 10px;
+  color: #5D5454;
+  font-weight: 600;
+  
+}
+
+.radio-btn-inner label:hover{ background: #e3e3e3;  }
+
+.radio-btn-inner label:active{ background: #e3e3e3;  }
+
+.radio-btn-inner label > input {
+  position: absolute;
+  left: -80px;
+  top: 50%;
+  margin-top: -8px;
+}
+.radio-btn-box a span {
+  display: block;
+}
+.radio-btn-box a:hover {
+  background: #eeedee;
+}
+.radio-btn-box a.active {
+  background: #f67466;
+  border: 2px solid #e66254;
+  color: #FFF;
+}
+.flight_type_style{
+  padding-top: 30px;
+  padding-left: 150px;
+}
+.economy_passenger_style{
+  padding-top: 30px;
+}
+.flight_type_select_style{
+  display: block;
+  font-size: 14px;
+  float: left;
+  width: 90px;
+  position: relative;
+  margin:10px 0px 0 0;
+  padding: 12px 10px 15px 10px;
+  text-align:center;
+  background: #efeff0;
+  background: #E8E8E8;
+  border: 2px solid #CCC;
+  border-radius: 3px;
+  cursor: pointer;
+  overflow:hidden;
+  text-transform:inherit !important;
+  font-family: arial,sans-serif;
+  height: 10px;
+  color: #5D5454;
+  font-weight: 600;
+
+}
+.has-success .form-control{
+  border: 2px solid #3c763d !important;
+}
+.has-success .form-control:focus{
+  border: 2px solid #3c763d !important;
+}
+.form-control:focus{
+  border: 1px solid #afafaf !important;
+  box-shadow: inset 0 1px 1px #afafaf !important;
+}
+.has-error .form-control{
+  border: 2px solid #f56555 !important;
+}
+.has-error .form-control:focus{
+  border: 2px solid #f56555 !important;
+}
+.start_end_style{
+  padding-left: 150px;
+}
+.text_boxes_styling{
+  border-radius: 0px!important;
+  width: 420px !important;
+  height: 45px !important;
+  font-size: 18px;
+  font-family: FontAwesome;
+}
+.destination_box_styling{
+  margin-left: -65px !important;
+}
+.flight_type_styling{
+  width: 110px !important;
+  height: 45px !important;
+  background: #E8E8E8 !important;
+  font-size: 14px !important;
+  font-weight: 600;
+  padding-left: 10px !important;
+
+}
+.plusspan {    
+  float: right;
+  top: 24px;
+  right: 6px;
+  position: relative;
+  z-index: 2;
+  color: grey;
+}
+.small_text_boxes_styling{
+  border-radius: 0px!important;
+  width: 280px !important;
+  height: 45px !important;
+  font-size: 18px;
+}
+.price_min_box_styling{
+  margin-left: 39px !important;
+}
+.duration_box_styling{
+  margin-left: 78px !important;
+}
+.passenger_button_styling{
+  height: 40px;
+  width: 110px;
+  border-radius: 2px;
+  border: 2px solid #CCC;
+  background: #E8E8E8 !important;
+}
+.hide_google_service{
+  display: none;
+}
+.move_table_left{
+  padding-left: 150px;
+}
+.listing_saved_search{
+}

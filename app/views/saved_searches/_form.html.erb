@@ -1,0 +1,139 @@
+
+<%= form_for(@saved_search) do |f| %>
+    <div class ="row">
+      <div class ="col-xs-9">
+        <div class = "flight_type_style">
+          <div class = "form-group">
+            <div class="radio-btn-inner">
+              <label>
+                <%= f.radio_button :flight_type, "Round Trip",class: "radio-boxes-input",radioactive: '' %>
+                Round Trip
+              </label>
+              <label>
+                <%= f.radio_button :flight_type, "One Way",class: "radio-boxes-input",radioactive: ''%>
+                One Way
+              </label>
+              <label>
+                <%= f.radio_button :flight_type, "Multi City",class: "radio-boxes-input",radioactive: ''%>
+                Multi City
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class ="col-xs-3">
+        <div class ="economy_passenger_style">
+          <div class = "form-group">
+            <%= f.select :flight_class, flight_types_to_be_included,{}, class: 'form-control flight_type_styling' %>
+          </div>
+        </div>
+        <div class = "form-group">
+          <button name='button' class ="passenger_button_styling">
+        </div>
+      </div>
+    </div>
+    <% if false %>
+      <div class = "adult_section">
+        <span id="plus">+</span>
+        <div id="display"></div>
+        <span id="minus">-</span>
+        <div class = "passenger_type_text_style">Adults</div>
+      </div>
+      <div class = "children_section">
+        <span id="plus">+</span>
+        <div id="display"></div>
+        <span id="minus">-</span>
+        <div class = "passenger_type_text_style">Children age 2-12</div>
+      </div>
+      <div class = "infants_on_seat_section">
+        <span id="plus">+</span>
+        <div id="display"></div>
+        <span id="minus">-</span>
+        <div class = "passenger_type_text_style">Infants in seat</div>
+      </div>
+      <div class = "infants_in_lap_section">
+        <span id="plus">+</span>
+        <div id="display"></div>
+        <span id="minus">-</span>
+        <div class = "passenger_type_text_style">Infants on lap</div>
+      </div>
+    <% end %>
+    <div class ="row">
+      <div class ="start_end_style">
+        <div class ="col-xs-6">
+          <div class ="form-group ">
+            <%= f.text_field :start, class: 'form-control text_boxes_styling', placeholder: 'Where From?'%>
+          </div>
+        </div>
+        <div class = "col-xs-6">
+          <div class = "form-group destination_box_styling">
+            <%= f.text_field :end, class: 'form-control text_boxes_styling', placeholder: 'Where To?'%>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class ="row">
+      <div class ="start_end_style">
+        <div class ="col-xs-6">
+          <div class ="form-group ">
+            <%= f.text_field :date1, class: 'form-control text_boxes_styling datepicker1' , placeholder: 'Add Departure Date' %>
+            <% if false %>
+            <div class="input-group-btn">
+              <button class="btn btn-default"><i class="fa fa-calendar"></i></button>
+            </div>
+            <% end %>
+          </div>
+        </div>
+        <div class = "col-xs-6">
+          <div class = "form-group destination_box_styling">
+            <%= f.text_field :date2, class: 'form-control text_boxes_styling datepicker2', placeholder: 'Add Return Date'%>
+            <% if false %>
+            <div class="input-group-btn">
+              <button class="btn btn-default"><i class="fa fa-calendar"></i></button>
+            </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class ="row">
+      <div class ="start_end_style">
+        <div class ="col-xs-3">
+          <div class ="form-group ">
+            <%= f.text_field :price_max, class: 'form-control small_text_boxes_styling', placeholder: 'Maximum Price XXX0000'%>
+          </div>
+        </div>
+        <div class = "col-xs-3">
+          <div class = "form-group price_min_box_styling">
+            <%= f.text_field :price_min, class: 'form-control small_text_boxes_styling', placeholder: 'Minimum Price XXX0000'%>
+          </div>
+        </div>
+        <div class = "col-xs-3">
+          <div class = "form-group duration_box_styling">
+            <%= f.text_field :duration, class: 'form-control small_text_boxes_styling', placeholder: 'Duration (in terms of hours)'%>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+      <div class="actions">
+        <%= f.submit %>
+      </div>
+<% end %>
+
+<div class ="hide_google_service">
+</div>
+
+
+<script type="text/javascript">  
+var counter = 0;
+
+// set the + functionality
+$('#plus').click( function(){$('#display').html( ++counter )} );
+// set the - functionality
+$('#minus').click( function(){$('#display').html( (counter-1<0)?counter:--counter )} );
+// initialize display
+$('#display').html( counter );
+</script>

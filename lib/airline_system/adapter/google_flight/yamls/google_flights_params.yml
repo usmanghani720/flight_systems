@@ -1,0 +1,9 @@
+fromDate: "<%= saved_search_date1 %>"
+toDate: "<%= saved_search_date2 %>"
+origin: "<%=saved_search_start %>"
+destination: "<%= saved_search_end %>"
+passengersAdultCount: "<%= saved_search_adult_count" %>
+passengersChildCount: "<%= saved_search_total_children_count" %>
+maxPrice: "<%= saved_search_price_max" %>
+refundable: ''
+solutions: ''

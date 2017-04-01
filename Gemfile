@@ -25,6 +25,23 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'google-api-client', '~> 0.10'
 
+gem 'geocoder'
+
+gem 'gmaps4rails'
+
+gem 'geokit-rails'
+
+gem "font-awesome-rails"
+
+gem 'jquery-ui-rails'
+
+gem 'rapidapi', '~> 0.1.2'
+
+gem 'will_paginate', '~> 3.1.0'
+
+gem 'time_difference'
+
+gem 'whenever', :require => false
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

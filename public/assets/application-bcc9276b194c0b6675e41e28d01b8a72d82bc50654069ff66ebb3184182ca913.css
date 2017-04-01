@@ -1,0 +1,158 @@
+/* line 1, /home/usman/projects/flight/app/assets/stylesheets/style.scss */
+.radio-boxes > label {
+  display: block;
+  font-size: 18px;
+  clear: both;
+  width: 315px;
+  padding-bottom: 20px;
+  position: relative;
+  padding-top: 3px;
+  margin-bottom: 10px;
+  padding: 18px 20px 18px 20px;
+  background: #efeff0;
+  background: white;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, white 35%, #d6d6d6 99%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, white 35%, #d6d6d6 99%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, white 35%, #d6d6d6 99%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d6d6d6', GradientType=0 );
+  /* IE6-9 */
+  border: 2px solid #CCC;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #666666;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* line 24, /home/usman/projects/flight/app/assets/stylesheets/style.scss */
+.radio-boxes a {
+  display: block;
+  font-size: 18px;
+  clear: both;
+  width: 315px;
+  padding-bottom: 20px;
+  position: relative;
+  padding-top: 3px;
+  margin-bottom: 10px;
+  padding: 18px 20px 18px 20px;
+  background: #efeff0;
+  background: white;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, white 35%, #d6d6d6 99%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, white 35%, #d6d6d6 99%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, white 35%, #d6d6d6 99%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d6d6d6', GradientType=0 );
+  /* IE6-9 */
+  border: 2px solid #CCC;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #666666;
+  text-align: center;
+  overflow: hidden;
+  font-weight: 500;
+}
+
+/* line 48, /home/usman/projects/flight/app/assets/stylesheets/style.scss */
+.radio-boxes a:active {
+  border: 2px solid #f67466;
+}
+
+/* line 51, /home/usman/projects/flight/app/assets/stylesheets/style.scss */
+.radio-boxes a:focus {
+  border: 2px solid #f67466;
+}
+
+/* line 54, /home/usman/projects/flight/app/assets/stylesheets/style.scss */
+.radio-boxes a:hover {
+  border: 2px solid #f67466;
+}
+
+/* line 57, /home/usman/projects/flight/app/assets/stylesheets/style.scss */
+.radio-boxes > label.for-child {
+  padding: 10px 20px 10px 20px !important;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+
+
+.radio-boxes > label {
+  display: block;
+  font-size: 18px;
+  clear: both;
+  width: 315px;
+  padding-bottom: 20px;
+  position: relative;
+  padding-top: 3px;
+  margin-bottom: 10px;
+  padding: 18px 20px 18px 20px;
+  background: #efeff0;
+  background: rgb(255,255,255); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 35%, rgba(214,214,214,1) 99%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 35%, rgba(214,214,214,1) 99%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 35%, rgba(214,214,214,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d6d6d6', GradientType=0 ); /* IE6-9 */
+  border: 2px solid #CCC;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #666666;
+  text-align: center;
+  overflow: hidden;
+}
+.radio-boxes a {
+  display: block;
+  font-size: 18px;
+  clear: both;
+  width: 315px;
+  padding-bottom: 20px;
+  position: relative;
+  padding-top: 3px;
+  margin-bottom: 10px;
+  padding: 18px 20px 18px 20px;
+  background: #efeff0;
+  background: rgb(255,255,255); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 35%, rgba(214,214,214,1) 99%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 35%, rgba(214,214,214,1) 99%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 35%, rgba(214,214,214,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d6d6d6', GradientType=0 ); /* IE6-9 */
+  border: 2px solid #CCC;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #666666;
+  text-align: center;
+  overflow: hidden;
+  font-weight: 500;
+}
+.radio-boxes a:active {
+  border: 2px solid #f67466;
+}
+.radio-boxes a:focus {
+  border: 2px solid #f67466;
+}
+.radio-boxes a:hover {
+  border: 2px solid #f67466;
+}
+.radio-boxes > label.for-child {
+  padding: 10px 20px 10px 20px !important;
+}
