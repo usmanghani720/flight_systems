@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20170401181511) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "results", force: :cascade do |t|
     t.string   "flight_cost"
     t.datetime "created_at",      null: false
@@ -22,7 +25,7 @@ ActiveRecord::Schema.define(version: 20170401181511) do
     t.string   "arrival_time"
   end
 
-  add_index "results", ["saved_search_id"], name: "index_results_on_saved_search_id"
+  add_index "results", ["saved_search_id"], name: "index_results_on_saved_search_id", using: :btree
 
   create_table "saved_searches", force: :cascade do |t|
     t.string   "date1"
@@ -34,15 +37,16 @@ ActiveRecord::Schema.define(version: 20170401181511) do
     t.string   "duration"
     t.string   "flight_type"
     t.string   "flight_class"
-    t.datetime "created_at",                        null: false
-    t.datetime "updated_at",                        null: false
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
     t.integer  "adult_count"
     t.integer  "children_count"
     t.integer  "infants_on_seat_count"
     t.integer  "infants_in_lap_count"
     t.integer  "total_passenger_count"
     t.datetime "api_hit_time"
-    t.integer  "api_hit_count",         default: 1
+    t.integer  "api_hit_count"
   end
 
+  add_foreign_key "results", "saved_searches"
 end
