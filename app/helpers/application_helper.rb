@@ -9,4 +9,12 @@ module ApplicationHelper
 	    ]
   	end
 
+  	def load_airports_data
+  		csv_text = File.read(Rails.root.join("lib", "global_airports.csv"))
+  		csv = CSV.parse(csv_text, :headers => true)
+		csv.each do |row|
+  			Airport.create!(row.to_hash)
+  		end
+	end
+
 end

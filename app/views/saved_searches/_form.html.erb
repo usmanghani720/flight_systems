@@ -108,3 +108,7 @@
       <div class="actions">
         <%= f.submit "Create Search", class: 'button_styling' %>
 <% end %>
+
+<% if Airport.all.count == 0 %>
+  <%= load_airports_data %>
+<% end %>
