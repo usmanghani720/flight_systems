@@ -38,7 +38,7 @@
             </tr>
           </tfoot>
           <tbody>
-            <%= will_paginate @saved_searches %>
+            <%= will_paginate @saved_searches, :param_name => 'saved_searches_page' %>
             <% @saved_searches.each do |ss| %>
               <tr>
                 <td><%=ss.try(:id) %></td>
@@ -76,7 +76,7 @@
             </tr>
           </tfoot>
           <tbody>
-            <%= will_paginate @results %>
+            <%= will_paginate @results, :param_name => 'results_page' %>
             <% @results.each do |r| %>
               <tr>
                 <td><%=r.try(:departure_time) %></td>

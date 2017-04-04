@@ -3,8 +3,8 @@ class SavedSearchesController < ApplicationController
 
   def index
     @saved_search = SavedSearch.new
-    @saved_searches = SavedSearch.paginate(:page => params[:page], :per_page => 5)
-    @results = Result.paginate(:page => params[:page], :per_page => 5)
+    @saved_searches = SavedSearch.paginate(:page => params[:saved_searches_page], :per_page => 5)
+    @results = Result.paginate(:page => params[:results_page], :per_page => 5)
   end
 
   def new
@@ -18,8 +18,8 @@ class SavedSearchesController < ApplicationController
       if @saved_search.save
         format.html { redirect_to action: "index", notice: 'Saved search was successfully created.' }
       else
-        @saved_searches = SavedSearch.paginate(:page => params[:page], :per_page => 5)
-        @results = Result.paginate(:page => params[:page], :per_page => 5)
+        @saved_searches = SavedSearch.paginate(:page => params[:saved_searches_page], :per_page => 5)
+        @results = Result.paginate(:page => params[:results_page], :per_page => 5)
         flash.now[:error] = 'Failed to add seach'
         render action: 'index'
       end
