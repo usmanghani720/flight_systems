@@ -35,6 +35,8 @@ class AirlineSystem
   	def check_google_service(obj)
   		d1 = date_into_correct_format(obj.date1) if obj.date1.present?
   		d2 = date_into_correct_format(obj.date2) if obj.date2.present?
+      start = obj.start if obj.start.length == 3
+      des = obj.end if obj.end.length == 3
   		start = get_airport_code(obj.start.upcase)
   		des = get_airport_code(obj.end.upcase)
 		RapidAPI.config(project: airline_configuration_params["project_name"], token: airline_configuration_params["project_token"])
