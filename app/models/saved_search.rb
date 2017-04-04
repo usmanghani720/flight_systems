@@ -4,14 +4,14 @@ class SavedSearch < ActiveRecord::Base
 	#validates_format_of :price_max, :with => /[A-Z] {3} \d+(\.\d+)?/, :on => :create
 	#validates_format_of :price_min, :with => /[A-Z] {3} \d+(\.\d+)?/, :on => :create
 	#validate :start_date_and_end_date
-	before_create :call_flights_api
+	after_create :call_flights_api
 
 	def start_date_and_end_date
     	errors.add(:date1, "Starting Date must be less than Ending Date") if self.date1.to_date > self.date2.to_date
   	end
 
 	def call_flights_api
-		ApplicationController.helpers.check_google_service(self.id,self.date1,self.date2,self.start,self.end, self.price_max, self.price_min)
+		AirlineSystem.new(self).check_google_service(self)
 	end
 
 	def total_count

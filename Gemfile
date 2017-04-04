@@ -42,6 +42,14 @@ gem 'will_paginate', '~> 3.1.0'
 gem 'time_difference'
 
 gem 'whenever', :require => false
+
+gem 'rufus-scheduler'
+
+gem 'google_places'
+
+gem 'geocomplete_rails'
+
+gem 'quiet_assets'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

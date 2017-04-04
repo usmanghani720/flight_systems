@@ -1,4 +1,5 @@
 $("body").on("click", "[data-radioactive]", function(e) {
+  debuuger
   $(this).parents('.radio-btn-inner').find('.radio-boxes-active').removeClass('radio-boxes-active');
   return $(this).parent().addClass('radio-boxes-active');
 });
@@ -56,3 +57,6 @@ $(function() {
 });
 
 });
+
+
+$("form").validator(); 

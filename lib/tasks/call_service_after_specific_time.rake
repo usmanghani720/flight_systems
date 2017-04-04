@@ -5,7 +5,7 @@ namespace :call_service_after_specific_time do
       		duration_in_minutes = (obj.duration.to_i * 60 * obj.api_hit_count)
       		if TimeDifference.between(obj.created_at, Time.now.utc).in_minutes.floor == duration_in_minutes
       			remove_previous_enteries(obj.id)
-      			ApplicationController.helpers.check_google_service(obj.id,obj.date1, obj.date2, obj.start, obj.end, obj.price_max, obj.price_min)
+      			AirlineSystem.new(obj).check_google_service(obj)
       			count = obj.api_hit_count + 1
       			obj.update_attributes(api_hit_count: count)
 			end

@@ -11,10 +11,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170401181511) do
+ActiveRecord::Schema.define(version: 20170403053328) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "airports", force: :cascade do |t|
+    t.string   "icao_code"
+    t.string   "iata_code"
+    t.string   "name"
+    t.string   "city"
+    t.string   "country"
+    t.integer  "lat_deg"
+    t.integer  "lat_min"
+    t.integer  "lat_sec"
+    t.string   "lat_dir"
+    t.integer  "lon_deg"
+    t.integer  "lon_min"
+    t.integer  "lon_sec"
+    t.string   "lon_dir"
+    t.integer  "altitude"
+    t.float    "lat_decimal"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.float    "lon_decimal"
+  end
 
   create_table "results", force: :cascade do |t|
     t.string   "flight_cost"

@@ -1,0 +1,131 @@
+@media only screen and (max-width : 1600px) {
+	.text_boxes_styling{
+		width: 350px !important;
+	}
+	.small_text_boxes_styling{
+    	width: 220px !important;
+    	font-size: 13px !important;
+    }
+}
+
+
+@media only screen and (max-width : 1400px) {
+	.text_boxes_styling{
+		width: 300px !important;
+	}
+}
+
+@media only screen and (max-width : 1200px) {
+	.text_boxes_styling{
+		width: 260px !important;
+	}
+	.small_text_boxes_styling{
+    	width: 200px !important;
+    	font-size: 12px !important;
+    }
+	.button_styling{
+	    font-size: 26px !important;
+	}
+}
+
+
+@media only screen and (max-width : 1024px) {
+	.text_boxes_styling{
+		width: 215px !important;
+		font-size: 12px !important;
+	}
+	.small_text_boxes_styling{
+    	width: 180px !important;
+    	font-size: 12px !important;
+    }
+	.button_styling{
+	    font-size: 24px !important;
+	}
+}
+
+
+@media only screen and (max-width : 992px) {
+	 .flight_type_style{
+	  padding-top: 30px;
+	  padding-left: 0px !important;
+	}
+	.start_end_style{
+  		padding-left: 0px !important;
+	}
+
+	.move_table_left{
+	  padding-left: 0px !important;
+	}
+
+	#navcontainer ul{
+	  padding-left: 0px !important;
+	}
+	.text_boxes_styling{
+		width: 250px !important;
+		font-size: 12px !important;
+	}
+	.small_text_boxes_styling{
+    	width: 180px !important;
+    	font-size: 11px !important;
+    }
+	.button_styling{
+	    font-size: 22px !important;
+	    margin-left: 0px !important;
+	}
+ }
+
+@media only screen and (max-width : 768px) {
+	 .flight_type_style{
+	  padding-top: 30px;
+	  padding-left: 0px !important;
+	}
+	.start_end_style{
+  		padding-left: 0px !important;
+	}
+
+	.move_table_left{
+	  padding-left: 0px !important;
+	}
+
+	#navcontainer ul{
+	  padding-left: 0px !important;
+	}
+	.text_boxes_styling{
+		width: 200px !important;
+		font-size: 12px !important;
+	}
+	.small_text_boxes_styling{
+    	width: 140px !important;
+    	font-size: 9px !important;
+    }
+	.button_styling{
+	    font-size: 20px !important;
+	    margin-left: 0px !important;
+	}
+}
+
+@media only screen and (max-width : 480px) {
+	 .flight_type_style{
+	  padding-top: 30px;
+	  padding-left: 0px !important;
+	}
+	.start_end_style{
+  		padding-left: 0px !important;
+	}
+
+	.move_table_left{
+	  padding-left: 0px !important;
+	}
+
+	#navcontainer ul{
+	  padding-left: 0px !important;
+	}
+	.text_boxes_styling{
+		width: 150px !important;
+		font-size: 12px !important;
+	}
+	.small_text_boxes_styling{
+    	width: 120px !important;
+    	font-size: 9px !important;
+    }
+ }

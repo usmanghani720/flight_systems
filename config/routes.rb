@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-  resources :saved_searches
-  resources :results
+  resources :saved_searches, :only => [:new, :create, :index, :destroy]
+  resources :results, :only => [:new, :create, :index]
   # You can have the root of your site routed with "root"
    root 'saved_searches#index'
 
