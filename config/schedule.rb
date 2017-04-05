@@ -19,5 +19,5 @@
 
 # Learn more: http://github.com/javan/whenever
  every 1.minute do
- 	#rake "call_service_after_specific_time:call_service_after_specific_time"
+ 	rake "call_service_after_specific_time:call_service_after_specific_time"
  end
