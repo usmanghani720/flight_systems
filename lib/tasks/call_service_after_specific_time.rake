@@ -2,12 +2,14 @@ namespace :call_service_after_specific_time do
 
 	task call_service_after_specific_time: :environment do
       	SavedSearch.all.each do |obj|
-      		duration_in_minutes = (obj.duration.to_i * 60 * obj.api_hit_count) if obj.api_hit_count.present?
-      		if TimeDifference.between(obj.created_at, Time.now.utc).in_minutes.floor == duration_in_minutes
-      			remove_previous_enteries(obj.id)
-      			AirlineSystem.new(obj).check_google_service(obj)
-      			count = obj.api_hit_count + 1
-      			obj.update_attributes(api_hit_count: count)
+      		if obj.duration.present?
+	      		duration_in_minutes = (obj.duration.to_i * 60 * obj.api_hit_count)
+	      		if TimeDifference.between(obj.created_at, Time.now.utc).in_minutes.floor == duration_in_minutes
+	      			remove_previous_enteries(obj.id)
+	      			AirlineSystem.new(obj).check_google_service(obj)
+	      			count = obj.api_hit_count + 1
+	      			obj.update_attributes(api_hit_count: count)
+				end
 			end
 		end
 	end
